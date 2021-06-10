@@ -1,0 +1,112 @@
+:root {
+  --primary-font: "Open-Sans";
+
+  --primary-color: #202020;
+  --secondary-color: #ffd100;
+  --primary-text: #333533;
+  --secondary-text: #d6d6d6;
+  --positive-text: #e0fff6;
+}
+
+body {
+  background-color: var(--primary-color);
+  display: flex;
+}
+
+.header {
+  background-color: var(--secondary-color);
+  width: 300px;
+  height: 100vh;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.menu-button {
+  background-color: var(--secondary-color);
+  border-radius: 2px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 16px;
+  margin: 1rem 0 0 7rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.list-menu {
+  font-size: 20px;
+  text-align: center;
+}
+
+.item-menu {
+  color: var(--primary-color);
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 4rem;
+}
+
+.open {
+  display: block;
+}
+
+.main-login {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-login {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 400px;
+}
+
+.text-login {
+  color: var(--secondary-text);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--primary-font);
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.input-login {
+  background-color: var(--secondary-text);
+  border-radius: 2px;
+  border: none;
+  font-size: 20px;
+  height: 1.5rem;
+  padding: 0.25rem;
+}
+
+.input-login:valid {
+  background-color: var(--positive-text);
+}
+
+.feedback-login {
+  display: none;
+  font-size: 15px;
+  margin: 0.25rem;
+}
+
+.input-login:valid + .feedback-login {
+  display: block;
+}
+
+.button-login {
+  background-color: var(--secondary-text);
+  border-radius: 2px;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 20px;
+  height: 3rem;
+  margin-top: 1rem;
+  padding: 0.25rem;
+  width: 100%;
+  text-transform: uppercase;
+}

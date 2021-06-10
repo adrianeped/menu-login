@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="menu-button">Menu</button>
+      <nav class="nav-menu">
+        <ul class="list-menu">
+          <li class="item-menu">
+            <a style="text-decoration: none" href="">About</a>
+          </li>
+          <li class="item-menu">
+            <a style="text-decoration: none" href="">List</a>
+          </li>
+          <li class="item-menu">
+            <a style="text-decoration: none" href="">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-login">
+      <form class="form-login">
+        <div class="text-login">
+          <label class="label-login" for="username">Username</label>
+          <input
+            class="input-login"
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
+          <p class="feedback-login">Campo válido!</p>
+        </div>
+
+        <div class="text-login">
+          <label class="label-login" for="password">Password</label>
+          <input
+            class="input-login"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+          <p class="feedback-login">Campo válido!</p>
+        </div>
+
+        <button class="button-login">Entrar</button>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
