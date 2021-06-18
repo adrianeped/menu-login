@@ -175,6 +175,10 @@ body {
     margin-top: 1rem;
   }
 
+  .input-login {
+    font-size: 16px;
+  }
+
   .feedback-login {
     font-size: 12px;
   }
