@@ -1,5 +1,5 @@
 :root {
-  --primary-font: "Open-Sans";
+  --primary-font: "Open Sans";
 
   --primary-color: #202020;
   --secondary-color: #ffd100;
@@ -11,16 +11,24 @@
 body {
   background-color: var(--primary-color);
   display: flex;
+  font-family: var(--primary-font), sans-serif;
 }
 
 .header {
   background-color: var(--secondary-color);
-  width: 300px;
   height: 100vh;
+  left: -153px;
+  position: fixed;
+  transition: left 0.2s;
+  width: 250px;
+}
+
+.open {
+  left: 0;
 }
 
 .nav-menu {
-  display: none;
+  margin-right: 85px;
 }
 
 .menu-button {
@@ -29,8 +37,10 @@ body {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   cursor: pointer;
+  display: block;
   font-size: 16px;
-  margin: 1rem 0 0 7rem;
+  margin: 1rem 0.5rem;
+  margin-left: auto;
   padding: 1rem;
   text-transform: uppercase;
 }
@@ -42,13 +52,15 @@ body {
 
 .item-menu {
   color: var(--primary-color);
-  text-decoration: none;
   list-style-type: none;
+  margin-right: 1rem;
   margin-top: 4rem;
+  text-decoration: none;
 }
 
-.open {
-  display: block;
+.link-menu {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .main-login {
@@ -69,7 +81,6 @@ body {
   color: var(--secondary-text);
   display: flex;
   flex-direction: column;
-  font-family: var(--primary-font);
   font-size: 20px;
   margin-bottom: 1rem;
 }
@@ -107,6 +118,64 @@ body {
   height: 3rem;
   margin-top: 1rem;
   padding: 0.25rem;
-  width: 100%;
   text-transform: uppercase;
+  width: 100%;
+}
+
+@media (max-width: 666px) {
+  .header {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+    left: 0;
+    top: -80px;
+    transition: top 0.2s;
+    width: 100vw;
+  }
+
+  .open {
+    top: 0px;
+  }
+
+  .nav-menu {
+    margin: 0;
+  }
+
+  .list-menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+  }
+
+  .item-menu {
+    margin: 0;
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  .menu-button {
+    display: block;
+    font-size: 0.75rem;
+    margin-right: 2.5rem;
+    right: 1rem;
+  }
+
+  .form-login {
+    width: 250px;
+  }
+
+  .text-login {
+    font-size: 16px;
+  }
+
+  .button-login {
+    font-size: 16px;
+    height: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  .feedback-login {
+    font-size: 12px;
+  }
 }
